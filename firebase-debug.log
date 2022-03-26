@@ -1,0 +1,60 @@
+[debug] [2022-03-26T19:33:09.176Z] ----------------------------------------------------------------------
+[debug] [2022-03-26T19:33:09.177Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2022-03-26T19:33:09.177Z] CLI Version:   10.5.0
+[debug] [2022-03-26T19:33:09.177Z] Platform:      darwin
+[debug] [2022-03-26T19:33:09.178Z] Node Version:  v16.13.2
+[debug] [2022-03-26T19:33:09.178Z] Time:          Sat Mar 26 2022 21:33:09 GMT+0200 (Eastern European Standard Time)
+[debug] [2022-03-26T19:33:09.179Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-26T19:33:09.184Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-26T19:33:09.184Z] > authorizing via signed-in user (dkom91@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/dkom/Developer/WebProjects/react-youtube
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-03-26T19:33:56.961Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-03-26T19:33:57.524Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-03-26T19:33:57.524Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project vminin-react-1 (vminin-react-1) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-03-26T19:34:32.882Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-03-26T19:34:33.042Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-03-26T19:34:33.043Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.6.10","browserURL":"https://www.gstatic.com/firebasejs/9.6.10/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.6.10/firebase.tgz"},"live":{"version":"9.6","browserURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.6.10/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.6.10/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.6.10/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.6.10/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.6.10/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.6.10/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.6.10/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.6.10/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.6.10/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.memory.js"}}
+[info] ✔  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at /Users/dkom/Developer/WebProjects/react-youtube 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=421818468&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-03-26T19:35:01.042Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"eeac8fbcdcae03c523c7","redirect_uri":"http://localhost:9005","state":"421818468"}
+[debug] [2022-03-26T19:35:01.417Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sat, 26 Mar 2022 19:35:01 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"59625e94279d31045266a5b5829dee78\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.githubapp.com collector.github.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com collector.github.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"E767:F09D:49178F9:4D0056B:623F6AE5"}
+[debug] [2022-03-26T19:35:01.421Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-03-26T19:35:01.800Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-03-26T19:35:01.801Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"CODE-DK","id":40181740,"node_id":"MDQ6VXNlcjQwMTgxNzQw","avatar_url":"https://avatars.githubusercontent.com/u/40181740?v=4","gravatar_id":"","url":"https://api.github.com/users/CODE-DK","html_url":"https://github.com/CODE-DK","followers_url":"https://api.github.com/users/CODE-DK/followers","following_url":"https://api.github.com/users/CODE-DK/following{/other_user}","gists_url":"https://api.github.com/users/CODE-DK/gists{/gist_id}","starred_url":"https://api.github.com/users/CODE-DK/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/CODE-DK/subscriptions","organizations_url":"https://api.github.com/users/CODE-DK/orgs","repos_url":"https://api.github.com/users/CODE-DK/repos","events_url":"https://api.github.com/users/CODE-DK/events{/privacy}","received_events_url":"https://api.github.com/users/CODE-DK/received_events","type":"User","site_admin":false,"name":"Dmitriy Komovskiy","company":null,"blog":"","location":"Moskow, Russia","email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":55,"public_gists":0,"followers":0,"following":1,"created_at":"2018-06-11T19:13:24Z","updated_at":"2022-03-14T23:07:16Z","private_gists":1,"total_private_repos":9,"owned_private_repos":9,"disk_usage":59741,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as CODE-DK 
+[info] 
