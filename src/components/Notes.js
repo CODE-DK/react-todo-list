@@ -7,8 +7,8 @@ export const Notes = ({notes}) => {
     return (
         <TransitionGroup component="ul" className="list-group">
             {notes.map(note =>
-                <CSSTransition key={note.id} className='note' timeout={800}>
-                    <li className="list-group-item note">
+                <CSSTransition key={note.id} classNames={"note"} timeout={800}>
+                    <li className="list-group-item border-1 rounded-1 note">
                         <div>
                             <strong>{note.title}</strong>
                             <small>{note.date}</small>
